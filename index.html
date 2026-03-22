@@ -52,7 +52,7 @@
 
         /* --- ESTILOS GENERALES DE SECCIONES --- */
         section { padding: 100px 5%; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 4rem; color: var(--primary-navy); }
+        .section-title { text-align: center; font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 800; margin-bottom: 4rem; color: var(--primary-black); }
         .fade-in { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
 
@@ -65,7 +65,7 @@
         .servicio-card:hover .servicio-img { transform: scale(1.05); }
         .servicio-img-wrapper { overflow: hidden; }
         .servicio-content { padding: 2rem; flex-grow: 1; display: flex; flex-direction: column;}
-        .servicio-content h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--primary-navy); }
+        .servicio-content h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--primary-green); }
         .servicio-content p { color: var(--text-light); font-size: 1rem; line-height: 1.7; }
 
         /* --- SOBRE MÍ (COPYWRITING PERSUASIVO) --- */
@@ -80,42 +80,42 @@
         .timeline::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: rgba(27,67,50,0.2); }
         .timeline-item { display: flex; margin-bottom: 3rem; position: relative; }
         .timeline-item:nth-child(odd) { justify-content: flex-end; }
-        .timeline-content { width: 45%; background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow); position: relative; border-top: 4px solid var(--primary-navy); }
+        .timeline-content { width: 45%; background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow); position: relative; border-top: 4px solid var(--primary-green); }
         .timeline-item:nth-child(odd) .timeline-content { margin-right: 50%; }
         .timeline-item:nth-child(even) .timeline-content { margin-left: 50%; }
         .timeline-dot { position: absolute; left: 50%; transform: translateX(-50%); width: 24px; height: 24px; background: var(--accent-yellow); border-radius: 50%; box-shadow: 0 0 0 5px var(--light-bg); z-index: 2; transition: all 0.3s; }
         .timeline-item:hover .timeline-dot { background: var(--accent-orange); transform: translateX(-50%) scale(1.2); }
-        .timeline-date { color: var(--accent-blue); font-weight: 600; margin-bottom: 0.5rem; display: block;}
-        .timeline-content h3 { color: var(--primary-navy); margin-bottom: 5px; font-size: 1.2rem;}
+        .timeline-date { color: var(--accent-orange); font-weight: 600; margin-bottom: 0.5rem; display: block;}
+        .timeline-content h3 { color: var(--primary-black); margin-bottom: 5px; font-size: 1.2rem;}
         .timeline-content p { color: var(--text-light); font-size: 0.95rem; font-weight: 600;}
 
         /* --- FORMACIÓN Y HERRAMIENTAS --- */
         .edu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 4rem;}
-        .edu-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow); text-align: center; border-left: 5px solid var(--accent-blue); }
-        .edu-card h3 { color: var(--primary-navy); margin-bottom: 10px; }
+        .edu-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: var(--shadow); text-align: center; border-left: 5px solid var(--primary-green); }
+        .edu-card h3 { color: var(--primary-black); margin-bottom: 10px; }
         .edu-card p { color: var(--text-light); }
         
         .habilidades-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto; justify-items: center; }
         .habilidad-card { background: white; width: 140px; height: 140px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px; padding: 1rem; border-radius: 15px; box-shadow: var(--shadow); transition: all 0.3s ease; text-align: center; border-bottom: 3px solid transparent; }
-        .habilidad-card i { font-size: 3rem; color: var(--primary-navy); transition: transform 0.3s ease; }
-        .habilidad-card span { font-weight: 600; color: var(--primary-navy); font-size: 0.85rem; }
-        .habilidad-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); border-bottom-color: var(--accent-gold); }
-        .habilidad-card:hover i { transform: scale(1.1); color: var(--accent-blue); }
+        .habilidad-card i { font-size: 3rem; color: var(--primary-green); transition: transform 0.3s ease; }
+        .habilidad-card span { font-weight: 600; color: var(--primary-black); font-size: 0.85rem; }
+        .habilidad-card:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); border-bottom-color: var(--accent-orange); }
+        .habilidad-card:hover i { transform: scale(1.1); color: var(--accent-orange); }
         
-        /* --- FOOTER / CONTACTO --- */
-        #contacto { background: var(--primary-navy); color: white; text-align: center; padding: 80px 5% 40px; max-width: 100%; border-top: 5px solid var(--accent-gold);}
-        .contacto-final { font-size: 2rem; margin-bottom: 2rem; font-weight: bold; color: var(--accent-gold); }
+        /* --- FOOTER / CONTACTO (CORREGIDO) --- */
+        #contacto { background: var(--primary-black); color: white; text-align: center; padding: 80px 5% 40px; max-width: 100%; border-top: 5px solid var(--accent-orange);}
+        .contacto-final { font-size: 2rem; margin-bottom: 2rem; font-weight: bold; color: var(--accent-yellow); }
         .contact-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin: 3rem 0; }
         .contact-item { display: flex; align-items: center; gap: 1rem; padding: 1rem 2rem; background: rgba(255,255,255,0.05); border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);}
-        .contact-item i { font-size: 1.5rem; color: var(--accent-gold); }
+        .contact-item i { font-size: 1.5rem; color: var(--accent-yellow); }
         .social-links { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); }
         .social-links a { color: var(--white); font-size: 2rem; transition: all 0.3s ease; }
-        .social-links a:hover { color: var(--accent-gold); transform: translateY(-5px);}
+        .social-links a:hover { color: var(--accent-yellow); transform: translateY(-5px);}
 
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
             .hamburger { display: flex; }
-            .nav-menu { display: none; position: fixed; top: 70px; left: 0; width: 100%; background: var(--primary-navy); flex-direction: column; padding: 2rem 0; text-align: center; box-shadow: 0 10px 10px rgba(0,0,0,0.5); }
+            .nav-menu { display: none; position: fixed; top: 70px; left: 0; width: 100%; background: var(--primary-black); flex-direction: column; padding: 2rem 0; text-align: center; box-shadow: 0 10px 10px rgba(0,0,0,0.5); }
             .nav-menu.active { display: flex; }
             .cta-buttons { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 300px; }
@@ -321,7 +321,6 @@
             <div class="habilidad-card"><i class="fas fa-map-marked-alt"></i><span>Topografía RTK</span></div>
             <div class="habilidad-card"><i class="fas fa-city"></i><span>PDOT / Urbanismo</span></div>
             <div class="habilidad-card"><i class="fas fa-project-diagram"></i><span>Proyectos</span></div>
-            
             <div class="habilidad-card"><i class="fas fa-mobile-alt"></i><span>ODK Levantamiento</span></div>
             <div class="habilidad-card"><i class="fas fa-gears"></i><span>GDAL/OGR Data</span></div>
             <div class="habilidad-card"><i class="fas fa-server"></i><span>GeoServer Map</span></div>
